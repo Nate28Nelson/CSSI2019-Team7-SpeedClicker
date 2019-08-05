@@ -1,30 +1,45 @@
-.apple {
+.target {
 height: 100px;
 width: auto;
 grid-column: 6;
-grid-row:3;
+grid-row:4;
 
 }
 
 .container{
   display:grid;
 
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10,1fr);
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11,1fr);
+  background-image: url(http://yesofcorsa.com/wp-content/uploads/2018/07/Shooting-Range-Wallpaper-1080p.jpg);
+  background-size: 100%;
+
 }
 
 .startBtn{
-  grid-row: 5;
-  grid-column: 5 / span 2;
+  grid-row: 6;
+  grid-column: 5 / span 3;
 }
 
 h1{
-  grid-column: 5 / span 2;
-  grid-row: 1;
-  color: black;
+  grid-column: 5 / span 3;
+  grid-row: 2;
+  color: white;
   text-align: center;
+  background-color: black;
+  justify-content: center;
+  font-size: 54px;
 }
 .score{
   grid-column: 1;
-  grid-row: 10;
+  grid-row: 6;
+  background-color: white;
+}
+
+#Bullseye{
+  height: 150px
+}
+ul {
+  list-style-type: none;
+  padding-left: 5px;
 }
