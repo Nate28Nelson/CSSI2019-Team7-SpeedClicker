@@ -42,12 +42,16 @@ jinja_current_directory = jinja2.Environment(
 
 class SpeedClicker(webapp2.RequestHandler):
     def get(self):
-        pass
+        start_template = jinja_current_directory.get_template("templates/index.html")
+        self.response.write(start_template.render())
 
-    def post(self):
-        pass
+#    def post(self):
+#        pass
 
 app = webapp2.WSGIApplication([
-
     ('/', SpeedClicker)
 ], debug=True)
+
+#def ScoreBoard(score):
+#    text = smallfont.render("score: "+str(score), True, black)
+#    gameDisplay.blit(text, [0,0])

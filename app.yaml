@@ -23,8 +23,6 @@ handlers:
 - url: /js
   static_dir: js
 
-- url: /templates
-  static_dir: templates
 
 - url: .*
   script: main.app
