@@ -1,0 +1,7 @@
+We did the html file, as well as css to try and set the start page before our game
+We are now trying to make the start button redirect to a new page to begin the game
+-made the css grid and placed the components in their proper spots
+-setting up the ScoreBoard and the scorekeeper
+
+Next session we are going to start building the game on the second page, as well as figuring out how to randomize the placement of the apples
+We are also going to try make the start screen look better as well as adding the functionality to the page and change the item from an apple to give it a theme

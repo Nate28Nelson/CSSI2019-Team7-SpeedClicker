@@ -1,0 +1,30 @@
+.apple {
+height: 100px;
+width: auto;
+grid-column: 6;
+grid-row:3;
+
+}
+
+.container{
+  display:grid;
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10,1fr);
+}
+
+.startBtn{
+  grid-row: 5;
+  grid-column: 5 / span 2;
+}
+
+h1{
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  color: black;
+  text-align: center;
+}
+.score{
+  grid-column: 1;
+  grid-row: 10;
+}
