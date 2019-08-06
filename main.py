@@ -55,42 +55,12 @@ class Game(webapp2.RequestHandler):
 #        pass
 
 app = webapp2.WSGIApplication([
-<<<<<<< HEAD
     ('/', SpeedClicker),
     ('/shooting-range', Game)
-=======
-<<<<<<< HEAD
-    ('/', SpeedClickerHome),
-    ('/shooting-range', SpeedClickerGame)
-], debug=True);
-
-
-=======
-    ('/', SpeedClicker),
-    ('/shooting-range', Game)
->>>>>>> df427ad6292065c36627df7299ec8730afc8d761
 >>>>>>> c0ad6c49248c00a4c219bff8b7c34af4aad57bfc
 
 ], debug=True)
 
-<<<<<<< HEAD
-#def ScoreBoard(score):
-#    text = smallfont.render("score: "+str(score), True, black)
-#    gameDisplay.blit(text, [0,0])
-
-
-def countdown(t):
-    while t:
-        mins, secs = divmod(t, 60)
-        timer = '{:02d}:{:02d}'.format(mins, secs)
-        print(timer, end="\r")
-        time.sleep(1)
-        t -= 1
-    print('!!!')
-
-t = input("Enter the time in seconds: ")
-countdown(int(t))
-=======
 class Timer:
   def __init__(self):
     self.start = time.time()
@@ -104,4 +74,3 @@ class Timer:
     h, m = divmod(m, 60)
     time_str = "%02d:%02d:%02d" % (h, m, s)
     return time_str
->>>>>>> e63d00bfc051016ee5d99fb7182dc71fc76f32bb
