@@ -9,4 +9,11 @@ grid-row:4;
   display:grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(11, 1fr);
+<<<<<<< HEAD
+=======
+}
+#timer{
+  grid-column: 10;
+  grid-row: 1;
+>>>>>>> b02163bb28e110fac6cfb562cb845ba98701ace2
 }
