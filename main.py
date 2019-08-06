@@ -33,6 +33,7 @@
 import webapp2
 import os
 import jinja2
+import time
 
 #remember, you can get this by searching for jinja2 google app engine
 jinja_current_directory = jinja2.Environment(
@@ -62,3 +63,16 @@ app = webapp2.WSGIApplication([
 #def ScoreBoard(score):
 #    text = smallfont.render("score: "+str(score), True, black)
 #    gameDisplay.blit(text, [0,0])
+
+
+def countdown(t):
+    while t:
+        mins, secs = divmod(t, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
+    print('!!!')
+
+t = input("Enter the time in seconds: ")
+countdown(int(t))
