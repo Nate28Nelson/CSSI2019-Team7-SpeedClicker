@@ -1,0 +1,12 @@
+.target {
+height: 100px;
+width: auto;
+grid-column: 6;
+grid-row:4;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);  
+}
