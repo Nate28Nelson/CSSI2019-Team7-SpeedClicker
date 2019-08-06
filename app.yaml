@@ -23,7 +23,6 @@ handlers:
 - url: /js
   static_dir: js
 
-
 - url: .*
   script: main.app
 

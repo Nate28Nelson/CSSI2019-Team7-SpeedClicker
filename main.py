@@ -40,24 +40,28 @@ jinja_current_directory = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class SpeedClicker(webapp2.RequestHandler):
+class SpeedClickerHome(webapp2.RequestHandler):
     def get(self):
         start_template = jinja_current_directory.get_template("templates/index.html")
         self.response.write(start_template.render())
+    def post(self):
+        pass
 
-class Game(webapp2.RequestHandler):
+class SpeedClickerGame(webapp2.RequestHandler):
     def get(self):
         start_template = jinja_current_directory.get_template("templates/GameIndex.html")
         self.response.write(start_template.render())
 
-#    def post(self):
-#        pass
+    def post(self):
+        pass
 
 app = webapp2.WSGIApplication([
-    ('/', SpeedClicker)
-    ('/shooting-range', Game)
+    ('/', SpeedClickerHome),
+    ('/shooting-range', SpeedClickerGame)
+], debug=True);
 
-], debug=True)
+
+
 
 #def ScoreBoard(score):
 #    text = smallfont.render("score: "+str(score), True, black)
