@@ -41,28 +41,34 @@ jinja_current_directory = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class SpeedClickerHome(webapp2.RequestHandler):
+class SpeedClicker(webapp2.RequestHandler):
     def get(self):
         start_template = jinja_current_directory.get_template("templates/index.html")
         self.response.write(start_template.render())
-    def post(self):
-        pass
 
-class SpeedClickerGame(webapp2.RequestHandler):
+class Game(webapp2.RequestHandler):
     def get(self):
         start_template = jinja_current_directory.get_template("templates/GameIndex.html")
         self.response.write(start_template.render())
 
-    def post(self):
-        pass
+#    def post(self):
+#        pass
 
 app = webapp2.WSGIApplication([
+<<<<<<< HEAD
     ('/', SpeedClickerHome),
     ('/shooting-range', SpeedClickerGame)
 ], debug=True);
 
 
 
+=======
+    ('/', SpeedClicker),
+    ('/shooting-range', Game)
+>>>>>>> c0ad6c49248c00a4c219bff8b7c34af4aad57bfc
+
+], debug=True)
+>>>>>>> e193aa49e74414344eb3d551eb320f6dd2261680
 
 class Timer:
   def __init__(self):
