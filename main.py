@@ -55,43 +55,21 @@ class Game(webapp2.RequestHandler):
 #        pass
 
 app = webapp2.WSGIApplication([
-<<<<<<< HEAD
-<<<<<<< HEAD
     ('/', SpeedClickerHome),
     ('/shooting-range', SpeedClickerGame)
 ], debug=True);
 
 
-
-=======
-    ('/', SpeedClicker),
-    ('/shooting-range', Game)
->>>>>>> c0ad6c49248c00a4c219bff8b7c34af4aad57bfc
-
-], debug=True)
->>>>>>> e193aa49e74414344eb3d551eb320f6dd2261680
-
 class Timer:
   def __init__(self):
     self.start = time.time()
-=======
-    ('/', SpeedClicker),
-    ('/shooting-range', Game)
->>>>>>> b02163bb28e110fac6cfb562cb845ba98701ace2
 
-], debug=True)
+  def restart(self):
+    self.start = time.time()
 
-<<<<<<< HEAD
   def get_time_hhmmss(self):
     end = time.time()
     m, s = divmod(end - self.start, 60)
     h, m = divmod(m, 60)
     time_str = "%02d:%02d:%02d" % (h, m, s)
     return time_str
-=======
-for i in range(8)
-    m = Mob()
-    all_sprities.add(m)
-    mobs.add(m)
-score = 0
->>>>>>> b02163bb28e110fac6cfb562cb845ba98701ace2

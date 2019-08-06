@@ -6,11 +6,15 @@ grid-row:4;
 
 }
 
+body {
+  overflow: hidden;
+}
+
 .container{
   display:grid;
 
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11,1fr);
+  grid-template-rows: repeat(7,1fr);
   background-image: url(http://yesofcorsa.com/wp-content/uploads/2018/07/Shooting-Range-Wallpaper-1080p.jpg);
 
   background-size: 100%;
