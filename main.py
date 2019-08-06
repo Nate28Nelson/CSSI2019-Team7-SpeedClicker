@@ -1,4 +1,4 @@
-#!/usr/bin/python
+ #!/usr/bin/python
 #
 # Copyright 2018 Google LLC
 #
@@ -45,11 +45,18 @@ class SpeedClicker(webapp2.RequestHandler):
         start_template = jinja_current_directory.get_template("templates/index.html")
         self.response.write(start_template.render())
 
+class Game(webapp2.RequestHandler):
+    def get(self):
+        start_template = jinja_current_directory.get_template("templates/GameIndex.html")
+        self.response.write(start_template.render())
+
 #    def post(self):
 #        pass
 
 app = webapp2.WSGIApplication([
     ('/', SpeedClicker)
+    ('/shooting-range', Game)
+
 ], debug=True)
 
 #def ScoreBoard(score):
