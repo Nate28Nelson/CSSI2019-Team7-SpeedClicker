@@ -1,5 +1,4 @@
 document.getElementById('timer').innerHTML = 01 + ":" + 00;
-startTimer();
 
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
@@ -20,9 +19,10 @@ function checkSecond(sec) {
   return sec;
 }
 
-const target = document.querySelector("#target")
-target.addEventListener("click", function(){
-  target.remove();
+startTimer();
+
+document.getElementById("target").addEventListener("click", function(){
+  document.getElementById("target").remove();
 
   let y = Math.floor((Math.random() * 100))
   let x = Math.floor((Math.random() * 100))
