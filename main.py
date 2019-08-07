@@ -55,8 +55,8 @@ class Game(webapp2.RequestHandler):
 #        pass
 
 app = webapp2.WSGIApplication([
-    ('/', SpeedClickerHome),
-    ('/shooting-range', SpeedClickerGame)
+    ('/', SpeedClicker),
+    ('/shooting-range', Game)
 ], debug=True);
 
 
