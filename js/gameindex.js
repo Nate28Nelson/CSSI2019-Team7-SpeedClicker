@@ -29,10 +29,12 @@ console.log(timeArray);
 startTimer();
 
 document.getElementById("target").addEventListener("click", function(){
-  document.getElementById("target").remove();
-
-  let y = Math.floor((Math.random() * 100))
-  let x = Math.floor((Math.random() * 100))
+  // document.getElementById("target").remove();
+console.log("wow")
+  let y = Math.floor((Math.random() * 1000))
+  let x = Math.floor((Math.random() * 1000))
+  let target = document.getElementById("target")
+  console.log("You did it")
 
 });
 
@@ -41,5 +43,7 @@ document.addEventListener("click", (e)=>{
   console.log((e.y))
 });
 
+top = y
+left = x
 //TODO: Create function that creates element of same id and randomizes
 // its location

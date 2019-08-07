@@ -15,10 +15,16 @@ body{
 
 }
 #timer{
-  grid-column: 10;
+  grid-column: 18;
   grid-row: 1;
   color: white;
   font-size: 250%;
   background-color: black;
   text-align: center;
+}
+
+#my_target {
+  position: absolute;
+  top: 80px;
+  left: 10px;
 }
