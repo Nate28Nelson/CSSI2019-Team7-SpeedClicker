@@ -4,13 +4,21 @@ width: auto;
 grid-column: 6;
 grid-row:4;
 }
-
+body{
+  overflow: hidden;
+}
 .container{
   display:grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(11, 1fr);
+  background-image: url(https://i.pinimg.com/originals/b9/4c/c9/b94cc9753e674518e4bb3ef1bc3fd9f3.jpg);
+
 }
 #timer{
   grid-column: 10;
   grid-row: 1;
+  color: white;
+  font-size: 250%;
+  background-color: black;
+  text-align: center;
 }
