@@ -9,6 +9,7 @@ function startTimer() {
 console.log(timeArray);
   // var s = checkSecond((timeArray[1] - 1));
   if(m>0&&s==0){m=m-1; s=59};
+
   if(s!=0){s=s-1}
   if(m==0&&s=="00"){alert('game over')}
 
