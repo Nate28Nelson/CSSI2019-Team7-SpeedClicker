@@ -9,11 +9,20 @@
   <link rel="stylesheet" type="text/css" href="../css/GameStyle.css">
   </head>
   <body>
-    <div class="timerC">
-      <p id="timer"></p>
-    </div>
-    <div class="scoreC">
-      <p id="score"></p>
+    <div class = "container">
+      <div id = "scoreLabel">
+        <p>Score:</p>
+      </div>
+      <div id = "timelabel">
+        <p>Time Remaining:</p>
+      </div>
+      <div class="timerC">
+        <p id="timer"></p>
+      </div>
+      <div class="scoreC">
+        <p id="score"></p>
+      </div>
+      <button onclick="window.location.reload();" class= "resetButton">Reset</button>
     </div>
     <img id="target" src="https://cdn.clipart.email/1aecd67ce12fc82c8b8c07f81eeb9a4c_target-clip-art-at-clkercom-vector-clip-art-online-royalty-_570-599.png" height="100" width="100" onclick = "changeImg()"/>
     <script type="text/javascript" src="../js/gameindex.js"></script>

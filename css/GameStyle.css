@@ -3,13 +3,48 @@ html {
 }
 
 .timerC{
-	display:grid;
-	grid-template-columns: repeat(11, 1fr);
-	grid-template-rows: repeat(11, 1fr);
-	grid-column: 10;
-	grid-row: 1;
+	grid-column: 11;
+	grid-row: 4;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .scoreC {
+  grid-column: 11;
+  grid-row: 2;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+}
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+
+#scoreLabel {
+  grid-column: 10;
+  grid-row: 2;
+  font-size: 130%;
+  text-align: center;
+  padding-right: 15px;
+  background-color: white;
+}
+
+#timelabel {
+  grid-column: 10;
+  grid-row: 4;
+  font-size: 130%;
+  text-align: right;
+  padding-right: 15px;
+  background-color: white;
+}
+
+.resetButton {
+  grid-column: 11;
+  grid-row: 6;
+  background-color: red;
+  font-size: 140%;
 }

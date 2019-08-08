@@ -24,8 +24,8 @@ function changeImg(){
   // document.getElementById("target").addEventListener("click", function(){
   // document.getElementById("target").remove();
 //1.generate ran #
-    var y = Math.floor(Math.random() * 1000);
-    var x = Math.floor(Math.random() * 1000);
+    var y = Math.floor(Math.random() * 800);
+    var x = Math.floor(Math.random() * 925);
   //2.add 'px' to ran #(y,x)
     var obj = document.getElementById("target");
   //height = x + 'px'
