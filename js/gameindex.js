@@ -3,7 +3,7 @@ const timer = document.querySelector("#timer");
 
 function startTimer() {
   var countdownTimer = setInterval(function() {
-        console.log(i);
+        //console.log(i);
         timer.innerHTML = i;
         i = i - 1;
         if (i <= 0) {
@@ -16,7 +16,8 @@ function startTimer() {
 
 startTimer();
 
-
+const scoreText = document.querySelector('#score');
+var score = 0;
 
 function changeImg(){
 
@@ -26,10 +27,10 @@ function changeImg(){
     var y = Math.floor(Math.random() * 1000);
     var x = Math.floor(Math.random() * 1000);
   //2.add 'px' to ran #(y,x)
-var obj = document.getElementById("target");
+    var obj = document.getElementById("target");
   //height = x + 'px'
-  obj.style.top = y + 'px';
-  obj.style.left = x +'px';
+    obj.style.top = y + 'px';
+    obj.style.left = x +'px';
   //width = y + 'px'
 
   //3.position: absolute
@@ -37,6 +38,10 @@ var obj = document.getElementById("target");
   //""style.marginleft = width
 
   //4. fingers crossed
+
+    score++;
+    scoreText.innerHTML = score;
+    console.log(score);
 }
 
 

@@ -3,7 +3,13 @@ html {
 }
 
 .timerC{
-  grid-column: 8;
-  grid-row: 1;
-  display: grid;
+	display:grid;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: repeat(11, 1fr);
+	grid-column: 10;
+	grid-row: 1;
+}
+
+.scoreC {
+
 }
