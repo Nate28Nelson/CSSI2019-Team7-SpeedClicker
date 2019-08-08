@@ -1,9 +1,9 @@
-.container{
-  display:grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+html {
+  background: url('http://musicments.com/img/d_default/green-grass-blue-sky/green-grass-blue-sky-cielo-5c74c00a22160.jpg') no-repeat center center fixed;
 }
-#timer{
-  grid-column: 10;
+
+.timerC{
+  grid-column: 8;
   grid-row: 1;
+  display: grid;
 }
