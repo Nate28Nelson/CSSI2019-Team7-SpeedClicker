@@ -9,6 +9,7 @@ function startTimer() {
         if (i <= 0) {
             clearInterval(countdownTimer);
             timer.innerHTML = "Game Over";
+            document.getElementById("target").remove();
         }
     }, 1000);
 }
