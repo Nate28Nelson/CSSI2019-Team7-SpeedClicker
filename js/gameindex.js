@@ -1,4 +1,4 @@
-var i = 59;
+var i = 20;
 const timer = document.querySelector("#timer");
 
 function startTimer() {
@@ -43,21 +43,3 @@ function changeImg(){
     scoreText.innerHTML = score;
     console.log(score);
 }
-
-
-
-
-//   let target = document.getElementById("target")
-//   console.log("You did it")
-//
-// });
-//
-// document.addEventListener("click", (e)=>{
-//   console.log((e.x))
-//   console.log((e.y))
-// });
-//
-// top = y
-// left = x
-//TODO: Create function that creates element of same id and randomizes
-// its location
